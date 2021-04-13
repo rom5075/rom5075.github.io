@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocoins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <label for="symbol">Пара</label>
+        <select id="symbol">
+            <option selected>BTCUSDT</option>
+            <option>ETHUSDT</option>
+            <option>LTCUSDT</option>
+            <option>BNBUSDT</option>
+        </select>
+
+        <label for="interval">Интервал</label>
+        <select id="interval">
+            <option selected>1m</option>
+            <option>5m</option>
+            <option>1h</option>
+            <option>4h</option>
+            <option>1d</option>
+        </select>
+    </header>
+    <div class="wrapper">
+        <div id="chart"></div>
+        <div class="trades-container">
+            <div class="trades-container__header">
+                <div>Цена</div>
+                <div>Количество</div>
+                <div>Сумма</div>
+            </div>
+            <div class="trades-container__list">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
